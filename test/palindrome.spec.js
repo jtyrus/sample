@@ -18,6 +18,10 @@ describe('Palindrome Checker', function() {
 		expect(checker.checkForPalindrome(input)).to.equal(false);
 	});
 
+	it('should throw an error if input is not an array', function() {
+		input=4000;
+		expect(checker.checkForPalindrome.bind(input)).to.throw('Incorrect parameters! Please pass a string or array.');
+	});
 
 	function givenInputIsAPalindrome() {
 

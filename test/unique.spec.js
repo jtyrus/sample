@@ -18,6 +18,10 @@ describe('Unique Util', function() {
 
 	});
 
+	it('should throw an error if input is not an array', function() {
+		chai.expect(unique.getUniqueValues.bind(2000)).to.throw('Incorrect parameters! Please pass a string or array.');
+	});
+
 	function whenGettingUniqueValues() {
 		arr = unique.getUniqueValues(arr);
 	}
