@@ -1,0 +1,14 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "description": "NodeJs Samples",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Jordan Tyrus",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2"
+  }
+}
